@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,23 +14,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="basketball_friend_finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="hfV-mZ-FHL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GPq-ct-jGS">
-                                <rect key="frame" x="147.66666666666666" y="51" width="118.99999999999997" height="20"/>
+                                <rect key="frame" x="128" y="27" width="119" height="20"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubn-3h-FUn">
-                                <rect key="frame" x="69.666666666666686" y="160" width="275" height="75.666666666666686"/>
+                                <rect key="frame" x="50" y="136" width="275" height="75.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="55"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWG-Ow-IBO" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
-                                <rect key="frame" x="16" y="780" width="382" height="62"/>
+                                <rect key="frame" x="16" y="585" width="343" height="62"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39380886130136988" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="dZu-G4-zti"/>
@@ -44,13 +44,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM6-aJ-yob">
-                                <rect key="frame" x="73.666666666666686" y="235.66666666666666" width="267" height="36.999999999999972"/>
+                                <rect key="frame" x="54" y="211.5" width="267" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a teamin your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfd-2U-6GN">
-                                <rect key="frame" x="16" y="280" width="382" height="22"/>
+                                <rect key="frame" x="16" y="256" width="343" height="22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -88,23 +88,23 @@
             <objects>
                 <viewController id="uiO-xQ-fF0" customClass="LeagueVC" customModule="basketball_friend_finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rxK-eo-RlD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="t2a-cm-wjG">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ZvG-f3-ud9">
-                                <rect key="frame" x="147.66666666666666" y="51" width="118.99999999999997" height="20"/>
+                                <rect key="frame" x="128" y="27" width="119" height="20"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired League:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2z-2g-who">
-                                <rect key="frame" x="126.00000000000001" y="126.99999999999999" width="162.33333333333337" height="30.333333333333329"/>
+                                <rect key="frame" x="106.5" y="103" width="162.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdy-Ma-CeX" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
-                                <rect key="frame" x="16" y="780" width="382" height="62"/>
+                                <rect key="frame" x="16" y="585" width="343" height="62"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39380886129999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="i0N-pt-jLr"/>
@@ -118,10 +118,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Lje-X2-8vE">
-                                <rect key="frame" x="16" y="183" width="382" height="222"/>
+                                <rect key="frame" x="16" y="159" width="343" height="222"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMa-Pd-g12" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="62"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.39380886129999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
                                         <state key="normal" title="Womens">
@@ -132,7 +132,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Du-8E-cR3" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="80" width="382" height="62"/>
+                                        <rect key="frame" x="0.0" y="80" width="343" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.39380886129999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
                                         <state key="normal" title="Mens">
@@ -143,7 +143,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQc-Io-CCA" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="160" width="382" height="62"/>
+                                        <rect key="frame" x="0.0" y="160" width="343" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.39380886129999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="62" id="MSW-4W-dIT"/>
@@ -180,7 +180,7 @@
                                 <variation key="heightClass=compact-widthClass=compact" spacing="5"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4v-a6-vuD">
-                                <rect key="frame" x="16" y="49" width="33" height="24"/>
+                                <rect key="frame" x="16" y="25" width="33" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="YOb-Q3-52A"/>
                                     <constraint firstAttribute="width" constant="33" id="aTI-h6-Klw"/>
@@ -227,26 +227,26 @@
             <objects>
                 <viewController id="eMf-yA-xLN" customClass="SkillVC" customModule="basketball_friend_finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zsY-cu-q27">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="n1c-Mx-zJm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="311-LX-kGN">
-                                <rect key="frame" x="147.66666666666666" y="51" width="118.99999999999997" height="20"/>
+                                <rect key="frame" x="128" y="27" width="119" height="20"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXr-K4-oW5">
-                                <rect key="frame" x="174" y="126.99999999999999" width="66.333333333333314" height="30.333333333333329"/>
+                                <rect key="frame" x="154.5" y="103" width="66.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ABZ-cZ-RZ8">
-                                <rect key="frame" x="16" y="183" width="382" height="62"/>
+                                <rect key="frame" x="16" y="159" width="343" height="62"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh9-3H-4pQ" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="171" height="62"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="151.5" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.39380886129999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="62" id="WqR-UK-7Bk"/>
@@ -257,7 +257,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0p-wZ-Suj" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
-                                        <rect key="frame" x="211" y="0.0" width="171" height="62"/>
+                                        <rect key="frame" x="191.5" y="0.0" width="151.5" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.39380886129999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
                                         <state key="normal" title="Baller">
@@ -267,7 +267,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWW-mx-x78" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
-                                <rect key="frame" x="16" y="780" width="382" height="62"/>
+                                <rect key="frame" x="16" y="585" width="343" height="62"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39380886129999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="a9T-3r-j3F"/>
@@ -279,7 +279,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtO-vO-25t">
-                                <rect key="frame" x="156.33333333333334" y="79" width="101.66666666666666" height="26"/>
+                                <rect key="frame" x="137" y="55" width="101.5" height="26"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
