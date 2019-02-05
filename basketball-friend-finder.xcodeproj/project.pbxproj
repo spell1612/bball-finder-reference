@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D046D85B2209620400946F6E /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046D85A2209620400946F6E /* SkillVC.swift */; };
+		D046D85D2209636600946F6E /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046D85C2209636600946F6E /* LeagueVC.swift */; };
 		D07482BF220815DC00393925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07482BE220815DC00393925 /* AppDelegate.swift */; };
-		D07482C1220815DC00393925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07482C0220815DC00393925 /* ViewController.swift */; };
+		D07482C1220815DC00393925 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07482C0220815DC00393925 /* WelcomeVC.swift */; };
 		D07482C4220815DC00393925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07482C2220815DC00393925 /* Main.storyboard */; };
 		D07482C6220815DE00393925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07482C5220815DE00393925 /* Assets.xcassets */; };
 		D07482C9220815DE00393925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07482C7220815DE00393925 /* LaunchScreen.storyboard */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D046D85A2209620400946F6E /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		D046D85C2209636600946F6E /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
 		D07482BB220815DC00393925 /* basketball-friend-finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "basketball-friend-finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07482BE220815DC00393925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D07482C0220815DC00393925 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D07482C0220815DC00393925 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		D07482C3220815DC00393925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D07482C5220815DE00393925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07482C8220815DE00393925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D046D85622095F4300946F6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D046D85722095F6700946F6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D07482C0220815DC00393925 /* WelcomeVC.swift */,
+				D046D85A2209620400946F6E /* SkillVC.swift */,
+				D046D85C2209636600946F6E /* LeagueVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D07482B2220815DC00393925 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +77,10 @@
 		D07482BD220815DC00393925 /* basketball-friend-finder */ = {
 			isa = PBXGroup;
 			children = (
-				D07482D0220821C500393925 /* Views */,
+				D046D85622095F4300946F6E /* Model */,
+				D07482D0220821C500393925 /* View */,
+				D046D85722095F6700946F6E /* Controller */,
 				D07482BE220815DC00393925 /* AppDelegate.swift */,
-				D07482C0220815DC00393925 /* ViewController.swift */,
 				D07482C2220815DC00393925 /* Main.storyboard */,
 				D07482C5220815DE00393925 /* Assets.xcassets */,
 				D07482C7220815DE00393925 /* LaunchScreen.storyboard */,
@@ -67,12 +89,12 @@
 			path = "basketball-friend-finder";
 			sourceTree = "<group>";
 		};
-		D07482D0220821C500393925 /* Views */ = {
+		D07482D0220821C500393925 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				D07482D1220821FA00393925 /* BorderButton.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D07482C1220815DC00393925 /* ViewController.swift in Sources */,
+				D046D85D2209636600946F6E /* LeagueVC.swift in Sources */,
+				D07482C1220815DC00393925 /* WelcomeVC.swift in Sources */,
 				D07482BF220815DC00393925 /* AppDelegate.swift in Sources */,
+				D046D85B2209620400946F6E /* SkillVC.swift in Sources */,
 				D07482D2220821FA00393925 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
