@@ -104,7 +104,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdy-Ma-CeX" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdy-Ma-CeX" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
                                 <rect key="frame" x="16" y="585" width="343" height="62"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39380886129999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -128,6 +128,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onTapWomens:" destination="uiO-xQ-fF0" eventType="touchUpInside" id="m7H-K3-yAl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Du-8E-cR3" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="80" width="343" height="62"/>
@@ -136,6 +139,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="OnTapMens:" destination="uiO-xQ-fF0" eventType="touchUpInside" id="drP-Pw-36x"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQc-Io-CCA" customClass="BorderButton" customModule="basketball_friend_finder" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="160" width="343" height="62"/>
@@ -147,6 +153,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="OnTapCoed:" destination="uiO-xQ-fF0" eventType="touchUpInside" id="4E6-gu-c2Y"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -184,6 +193,7 @@
                         <viewLayoutGuide key="safeArea" id="3tX-5z-MBV"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="rdy-Ma-CeX" id="aag-ee-qtw"/>
                         <segue destination="eMf-yA-xLN" kind="show" identifier="leagueToSkill" id="X1s-eW-4TT"/>
                     </connections>
                 </viewController>
@@ -248,26 +258,24 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifO-1A-HtP">
-                                <rect key="frame" x="16" y="25" width="33" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="33" id="13C-Kw-Kyf"/>
-                                    <constraint firstAttribute="height" constant="24" id="gFn-KD-bnJ"/>
-                                </constraints>
-                                <state key="normal" image="backButton"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtO-vO-25t">
+                                <rect key="frame" x="137" y="55" width="101.5" height="26"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="n1c-Mx-zJm" firstAttribute="bottom" secondItem="zsY-cu-q27" secondAttribute="bottom" id="57a-30-7XE"/>
+                            <constraint firstItem="wtO-vO-25t" firstAttribute="top" secondItem="311-LX-kGN" secondAttribute="bottom" constant="8" id="9ez-wV-74y"/>
                             <constraint firstItem="ABZ-cZ-RZ8" firstAttribute="leading" secondItem="QD0-Kh-Vne" secondAttribute="leading" constant="16" id="Dds-4n-uHj"/>
                             <constraint firstItem="n1c-Mx-zJm" firstAttribute="top" secondItem="zsY-cu-q27" secondAttribute="top" id="E96-2Y-Ogj"/>
-                            <constraint firstItem="ifO-1A-HtP" firstAttribute="top" secondItem="QD0-Kh-Vne" secondAttribute="top" constant="5" id="GXr-N0-BBs"/>
                             <constraint firstItem="OXr-K4-oW5" firstAttribute="centerX" secondItem="zsY-cu-q27" secondAttribute="centerX" id="IBG-WI-ZQw"/>
                             <constraint firstItem="311-LX-kGN" firstAttribute="top" secondItem="QD0-Kh-Vne" secondAttribute="top" constant="7" id="Jr9-CP-rBz"/>
                             <constraint firstItem="311-LX-kGN" firstAttribute="centerX" secondItem="zsY-cu-q27" secondAttribute="centerX" id="MMS-dn-d0U"/>
                             <constraint firstItem="n1c-Mx-zJm" firstAttribute="leading" secondItem="QD0-Kh-Vne" secondAttribute="leading" id="VUQ-2m-oKH"/>
-                            <constraint firstItem="ifO-1A-HtP" firstAttribute="leading" secondItem="QD0-Kh-Vne" secondAttribute="leading" constant="16" id="X3K-sV-TG8"/>
+                            <constraint firstItem="wtO-vO-25t" firstAttribute="centerX" secondItem="zsY-cu-q27" secondAttribute="centerX" id="X8N-gp-yeA"/>
                             <constraint firstItem="QD0-Kh-Vne" firstAttribute="trailing" secondItem="n1c-Mx-zJm" secondAttribute="trailing" id="Zaf-X2-O6w"/>
                             <constraint firstItem="QD0-Kh-Vne" firstAttribute="trailing" secondItem="fWW-mx-x78" secondAttribute="trailing" constant="16" id="bvI-hv-bNr"/>
                             <constraint firstItem="QD0-Kh-Vne" firstAttribute="bottom" secondItem="fWW-mx-x78" secondAttribute="bottom" constant="20" id="dT1-oL-2pg"/>
@@ -278,6 +286,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QD0-Kh-Vne"/>
                     </view>
+                    <connections>
+                        <outlet property="modeLabel" destination="wtO-vO-25t" id="uTl-zg-jlx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNO-g9-gXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
